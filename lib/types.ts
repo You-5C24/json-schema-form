@@ -58,6 +58,7 @@ export const FiledPropsDefine = {
     // required: true,
   },
   value: {
+    type: Object as PropType<any>,
     required: true,
   },
   onChange: {
