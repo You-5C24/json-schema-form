@@ -5,4 +5,10 @@ import vueJsx from "@vitejs/plugin-vue-jsx"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), vueJsx()],
+  resolve: {
+    alias: {
+      // 配置别名
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
 })
